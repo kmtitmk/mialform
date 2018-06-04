@@ -1,0 +1,41 @@
+body {
+	font-size: 14px;
+	line-height: 1.4;
+}
+#content {
+	margin: auto;
+	width: 640px;
+	form {
+		text-align: center;
+		table {
+			text-align: left;
+			width: 100%;
+			border-collapse: collapse;
+		}
+		th, td {
+			border: 1px solid #CCC;
+			padding: .5em;
+		}
+		th {
+			width: 25%;
+			background: #EEE;
+		}
+		td {
+			font-size: 12px;
+			label {
+				margin-left: .5em;
+				&:first-child { margin-left: 0; }
+			}
+		}
+		.btn {
+			margin-top: 20px;
+			display: inline-block;
+		}
+	}
+	.error {
+		margin-top: .25em;
+		display: none;
+		color: #F00;
+		&.on { display: block; }
+	}
+}
